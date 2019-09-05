@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_form"
+    android:orientation="vertical"
+    android:id="@+id/rl"
+    android:padding="10dp"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/app_picture"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="0dp"
+        android:scaleType="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:backgroundTint="#f99"
+        android:textSize="35sp"
+        android:textColor="#00f"
+        android:background="#eee"
+        android:id="@+id/tv_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="30dp"
+        android:hint="Enter username"
+        android:id="@+id/et_uname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_uname"
+        android:hint="Enter mobile number"
+        android:id="@+id/et_mno"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mno"
+        android:hint="Enter email"
+        android:id="@+id/et_email"
+        android:inputType="textEmailAddress"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:id="@+id/spinner_country"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_country"
+        android:hint="Enter password"
+        android:id="@+id/et_pwd"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree"
+        android:layout_below="@+id/et_pwd"
+        android:id="@+id/chk_agree"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_agree"
+        android:text="Signup"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_signup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signup"
+        android:text="Already a member?Login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_login"/>
+
+</RelativeLayout>
